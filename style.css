@@ -82,11 +82,15 @@ main{
     display: flex;
     align-items: center;
 }
-
+.center{
+    flex-direction: column;
+    display: flex;
+    background-color: black;
+    width: 1200px;
+    height: 100px;
+    justify-content: center;
+}
 .center h2, h4{
     color: white;
-    width: 1200px;
-    padding: 10px;
-    background-color: black;
 }
 
