@@ -48,11 +48,11 @@ li,a, button {
     transition-duration: 0.3s;
 }
 .navigation li a:hover{
-    color: rgb(0, 119, 128);
+    color: rgb(216, 128, 69);
 }
 button{
     margin: 20px 25px;
-    background-color: rgb(0, 119, 128);
+    background-color: rgb(216, 128, 69);
     border: none;
     border-radius: 50px;
     cursor: pointer;
@@ -60,18 +60,21 @@ button{
 }
 
 button:hover{
-    background-color: white;
-    color: rgb(0, 119, 128);
+    color: rgb(216, 128,69);
+    background-color: rgb(255, 255, 255);
 }
 main{
     display: flex;
+    flex-direction: column;
     margin: 70px 20px;
     background-color: black;
     justify-content: center;
+    align-items: center;
 }
 .Container{
     max-width: 100%;
     display: flex;
+    margin: 20px;
 }
 #Mission{
     background-image: url(./images/img-mission-background.webp);
@@ -92,5 +95,33 @@ main{
 }
 .center h2, h4{
     color: white;
+}
+#Featured-tea{
+    max-width: 1100px;
+    flex-direction: column;
+    display: flex;
+    background-color: rgb(0, 0, 0);
+}
+#Featured-tea h2{
+    color: white;
+    margin: 10px 0;
+}
+#Featured-tea h4{
+    color: seashell;
+    margin: 10px 0;
+}
+
+.image-collection{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+}
+.images{
+    width: 300px;
+    height: 200px;
+}
+#Featured-tea .image-collection .Container{
+    display: inline-flex;
+    flex-direction: column;
 }
 
