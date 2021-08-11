@@ -2,6 +2,11 @@ html{
     text-align: center;
     background-color: black;
 }
+h2{
+    font-family: 'Anton';
+    letter-spacing: 2px;
+    font-size: 40px;
+}
 *{
     color: seashell;
     font-family: 'Montserrat', sans-serif;
@@ -148,7 +153,6 @@ main{
     justify-content: center;
 }
 .top h2{
-    font-size: 30px;
     font-weight: bold;
 }
 .bottom{
@@ -170,6 +174,11 @@ main{
     justify-content:space-around
 }
 
+#Contacts{
+    flex-direction: column;
+    height: 200px;
+    justify-content:space-between
+}
 @media only screen and (max-width: 900px) {
     header{
         display: block;
