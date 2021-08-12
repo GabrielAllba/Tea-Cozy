@@ -215,6 +215,10 @@ footer p {
     height: 100%;
     background-color: rgb(26, 29, 29);
 }
+.navbar_link:hover{
+    background-color: rgb(44, 43, 43);
+    color: aliceblue;
+}
 @media only screen and (max-width: 900px) {
     header .pc{
         display: none;
@@ -227,5 +231,20 @@ footer p {
         display: flex;
         justify-content: flex-end;
         cursor: pointer;
+    }
+}
+
+@media only screen and (min-width: 1000px){
+    #nav-mobile{
+        display: none;
+    }
+    #close-nav{
+        display: none;
+    }
+    #mobile-navigation{
+        display: none;
+    }
+    .material-icons{
+        display: none;
     }
 }
