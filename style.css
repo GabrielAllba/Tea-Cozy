@@ -81,6 +81,7 @@ main{
     margin: 20px;
 }
 #Mission{
+    background-position: center;
     background-image: url(./images/tea-background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -187,12 +188,44 @@ footer p {
     margin-left: 20px;
     margin-bottom: 20px;
 }
+#nav-mobile{
+    display: none;
+    margin: 10px;
+}
+#close-nav{
+    display: none;
+    margin: 10px;
+}
+.navbar_link .material-icons{
+    margin-right: 10px;
+}
+.navbar_link{
+    display: flex;
+    padding: 12px;
+    align-items: center;
+    background-color: rgb(58, 57, 56);
+    border-bottom: 1px solid rgb(26, 29, 29);
+}
+#mobile-navigation{
+    box-shadow: 0 0 10px 5px rgb(31, 30, 30);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    background-color: rgb(26, 29, 29);
+}
 @media only screen and (max-width: 900px) {
-    header{
-        display: block;
+    header .pc{
+        display: none;
     }
     button, nav{
         display: none;
     }
-    
+    #nav-mobile{
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        cursor: pointer;
+    }
 }

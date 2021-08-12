@@ -6,18 +6,29 @@
         <link rel="stylesheet" href="style.css">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
     </head>
     <body>
         <header>
-            <img class="logo" src="./images/img-tea-cozy-logo.webp" alt="logo">
-            <nav>
+            <span class="material-icons" id="nav-mobile">view_headline</span>
+            <span class="material-icons" id="close-nav">close</span>
+            <div id="mobile-navigation">
+                <a href="#Mission" class="navbar_link">
+                    <span class="material-icons">assignment</span>Missions
+                </a>
+                <a href="#Locations" class="navbar_link">
+                    <span class="material-icons">room</span>Locations
+                </a>
+            </div>
+            <img class="pc logo" src="./images/img-tea-cozy-logo.webp" alt="logo">
+            <nav class="pc">
                 <ul class="navigation">
                     <li><a href="#Mission">Mission</a></li>
                     <li><a href="#Featured-tea">Featured Tea</a></li>
                     <li><a href="#Locations">Locations</a></li>
                 </ul>
             </nav>
-            <a class="button" href="#Contacts"><button>Contact</button></a>
+            <a class="pc button" href="#Contacts"><button>Contact</button></a>
         </header>
         <main>
             <div class="Container" id="Mission">
@@ -88,5 +99,6 @@
         <footer>
             <p>copyright The Tea Cozy 2017</p>
         </footer>
+        <script src="./script.js"></script>
     </body>
 </html>
