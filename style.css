@@ -188,13 +188,16 @@ footer p {
     margin-left: 20px;
     margin-bottom: 20px;
 }
-#nav-mobile{
-    display: none;
+#toggle{
     margin: 10px;
+    display: none;
 }
 #close-nav{
     display: none;
     margin: 10px;
+    width: 100%;
+    justify-content: flex-end;
+    cursor: pointer;
 }
 .navbar_link .material-icons{
     margin-right: 10px;
@@ -207,6 +210,7 @@ footer p {
     border-bottom: 1px solid rgb(26, 29, 29);
 }
 #mobile-navigation{
+    display: none;
     box-shadow: 0 0 10px 5px rgb(31, 30, 30);
     position: fixed;
     top: 0;
@@ -221,31 +225,48 @@ footer p {
     transition-duration: 0.3s;
 }
 @media only screen and (max-width: 900px) {
-    header .pc{
-        display: none;
+    header{
+        display: flex;
+        flex-direction: column;
     }
-    button, nav{
-        display: none;
+    button, .logo{
+        display: none
     }
-    #nav-mobile{
+    #toggle{
         width: 100%;
         display: flex;
-        justify-content: flex-end;
+        justify-content: center;
         cursor: pointer;
     }
-}
+    nav{
+        display: none;
+        width: 100%;
+    }
 
-@media only screen and (min-width: 1000px){
-    #nav-mobile{
-        display: none;
+    .navigation{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+        background-color: rgb(0, 0, 0);
     }
-    #close-nav{
-        display: none;
+    .navigation li{
+        margin-right: 25px;
+        display: inline-block;
+        padding: 10px;
     }
-    #mobile-navigation{
-        display: none;
+    .navigation li:hover{
+        transition-duration: 0.2s;
+        background-color: rgb(216, 128, 69);
     }
-    .material-icons{
-        display: none;
+    .navigation li a:hover{
+        color: black;
+    }
+    .navigation a{
+        text-decoration: none;
+
+    }
+    header nav.active {
+        display: flex;
     }
 }
