@@ -10,6 +10,7 @@ Tea Cozy is a project based on CodeCademy Full-stack Engineering career path whe
 Codecademy, as part of the Full-stack Engineering Career Path training requires it's students to make a responsive  website after following the responsive website with flexbox section.
 
 ## Technologies
+- JavaScript ES6
 - HTML 5
 - CSS 3
 
